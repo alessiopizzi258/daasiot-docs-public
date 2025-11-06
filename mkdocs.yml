@@ -1,0 +1,88 @@
+site_name: DaaS-IoT Documentation
+site_description: Complete DaaS-IoT Technology Documentation
+site_author: Sebyone
+site_url: https://sebyone.github.io/daasiot-docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sidebar
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: blue
+      accent: red
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/custom.js
+
+plugins:
+  - search
+  - awesome-pages
+  - git-committers:
+      repository: sebyone/daasiot-docs
+      branch: main
+      docs_path: docs
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      timezone: Europe/Rome
+
+nav:
+  - Home: index.md
+  - DaaS Project:
+    - Introduction: daas-project/introduction.md
+    - What is DaaS?: daas-project/what-is-daas.md
+    - Network Concepts: daas-project/network-concepts.md
+    - Features: daas-project/features.md
+    - Types and Messages: daas-project/types-messages.md
+    
+  - LibDaaS:
+    - Component Overview: libdaas/component-overview.md
+    - API References:
+      - LibDaaS Component: libdaas/api/libdaas-component.md
+      - R20: libdaas/api/r20.md
+      
+  - DaaS-IoT:
+    - Product Tour: daas-iot/product-tour.md
+    - Portability: daas-iot/portability.md
+    - Why should you use DaaS-IoT?: daas-iot/why-use.md
+    - Mesh Topology: daas-iot/mesh-topology.md
+    - Self Provisioning: daas-iot/self-provisioning.md
+    - Self Synchronize: daas-iot/self-synchronize.md
+    - Data Encapsulation: daas-iot/data-encapsulation.md
+    - SDKs:
+      - Overview: daas-iot/sdks/overview.md
+      - How to use DaaS SDKs?: daas-iot/sdks/how-to-use.md
+      - SDK Python: daas-iot/sdks/python.md
+      - SDK GNU: daas-iot/sdks/gnu.md
+      - SDK Qt: daas-iot/sdks/qt.md
+      
+  - DSPerf:
+    - Overview: dsperf/overview.md
+    - Options: dsperf/options.md
+    - Compliance: dsperf/compliance.md
+    - Test Case: dsperf/test-case.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+repo_name: sebyone/daasiot-docs
+repo_url: https://github.com/sebyone/daasiot-docs
+
+copyright: Copyright &copy; 2025 SebyOne Srl
