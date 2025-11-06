@@ -1,0 +1,31 @@
+site_name: DaaS Project
+site_description: Core DaaS Technology
+site_url: http://docs.daasiot.com/daas-project/ 
+
+theme:
+  name: material
+  features:
+    - navigation.sidebar
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: blue
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - What is DaaS?: what-is-daas.md
+  - Network Concepts: network-concepts.md
+  - Features: features.md
+  - Types and Messages: types-messages.md
+
+plugins:
+  - search
+
+extra_css:
+  - ../docs/stylesheets/extra.css
+
+site_dir: ../site/daas-project
+
+copyright: |
+  <a href="/" style="color: #c13725; font-weight: 600;">← Back to Main Site</a>
