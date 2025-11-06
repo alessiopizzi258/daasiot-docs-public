@@ -1,0 +1,30 @@
+site_name: LibDaaS
+site_description: Core Library API Reference
+site_url: http://docs.daasiot.com/libdaas/ 
+
+theme:
+  name: material
+  features:
+    - navigation.sidebar
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: green
+
+nav:
+  - Home: index.md
+  - Component Overview: component-overview.md
+  - API References:
+    - LibDaaS Component: api/libdaas-component.md
+    - R20: api/r20.md
+
+plugins:
+  - search
+
+extra_css:
+  - ../docs/stylesheets/extra.css
+
+site_dir: ../site/libdaas
+
+copyright: |
+  <a href="/" style="color: #c13725; font-weight: 600;">← Back to Main Site</a>
