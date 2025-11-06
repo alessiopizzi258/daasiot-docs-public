@@ -27,14 +27,6 @@ extra_javascript:
 plugins:
   - search
   - awesome-pages
-  - git-committers:
-      repository: sebyone/daasiot-docs
-      branch: main
-      docs_path: docs
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
-      timezone: Europe/Rome
 
 nav:
   - Home: index.md

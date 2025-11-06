@@ -1,0 +1,29 @@
+name: Deploy with Mike
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - run: pip install mkdocs-material mike
+      
+      - run: mike deploy --push --update-aliases v1.0.0 "v1.0.0"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - run: mike set-default --push latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
