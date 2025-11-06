@@ -1,0 +1,37 @@
+site_name: DaaS-IoT
+site_description: IoT Platform Documentation
+site_url: http://localhost:8003/
+
+theme:
+  name: material
+  features:
+    - navigation.sidebar
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: purple
+
+nav:
+  - Home: index.md
+  - Product Tour: product-tour.md
+  - Portability: portability.md
+  - Why use DaaS-IoT?: why-use.md
+  - Mesh Topology: mesh-topology.md
+  - Self Provisioning: self-provisioning.md
+  - Self Synchronize: self-synchronize.md
+  - Data Encapsulation: data-encapsulation.md
+  - SDKs:
+    - Overview: sdks/overview.md
+    - How to use: sdks/how-to-use.md
+    - Python: sdks/python.md
+    - GNU: sdks/gnu.md
+    - Qt: sdks/qt.md
+
+plugins:
+  - search
+
+extra_css:
+  - ../docs/stylesheets/extra.css
+
+copyright: |
+  <a href="http://localhost:8000/" style="color: #c13725; font-weight: 600;">← Back to Main Site</a>
